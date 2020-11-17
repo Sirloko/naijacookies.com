@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>9jaCookies</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/details.css">
+        <link rel="stylesheet" href="css/base.css">
+        <script src="/js/all.js"></script>
+
+    </head>
+    <body>
+        <!--====== HEADER PART START ======-->
+        <section id="home" class="main_section">
+        <header>
+            <div class="logo">
+                <img src="img/icon/a1.svg" alt="23and four" class="logo">
+            </div>
+    
+            <nav>
+                
+                <a href="#" class="hde-dsk">
+                    <img src="img/icon/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="shw-dsk hde-mob navbar" id="nav">
+                    <li id="exit" class="exit-btn hde-dsk"><img src="img/icon/exit.svg" alt="exit"></li>
+                    <li class="nav-item"><a class="page-scroll active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a href="recipes.html">Recipies</a></li>
+                    <li class="nav-item"><a href="details.html">Store</a></li>
+                    <li class="nav-item"><a href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a href="pictures.html"  target="_blank">Gallery</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main_content">
+
+            <div class="recipe-details">
+                <div class="recipe_img"> <img src="/img/p4.jpg" alt="image contains one of naijacookies recipe"></div>
+                <div class="recipe_info">
+                    <h2>Recipe Name</h2>
+                    <div class="sub_info">
+                        <p>Yield Time : 10 minutes</p>
+                        <p>Oven Time : 1 hour</p>
+                        <p>Oven Temperature : 5 days</p>
+                    </div>
+                    <div class="recipe_action">
+                        <a href="#">Download Recipe</a> 
+                        <a href="#1"> Print</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="recipe_description">
+                <h2>Recipe Desciption</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero rem delectus ullam ducimus placeat omnis deserunt amet aperiam minus.</p>
+            </div>
+            
+            <div class="recipe_ingredients">
+                <h2>Recipe Ingredients</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+            </div>
+            
+            <div class="recipe_instructions">
+                <h2>Recipe Instructions</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam quia, dignissimos accusantium excepturi tenetur.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam quia, dignissimos accusantium excepturi tenetur.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam quia, dignissimos accusantium excepturi tenetur.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam quia, dignissimos accusantium excepturi tenetur.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam quia, dignissimos accusantium excepturi tenetur.</li>
+                </ul>
+            </div>
+
+            <div class="recipe_note">
+                <h2>Note</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero rem delectus ullam ducimus placeat omnis deserunt amet aperiam minus.</p>
+            </div>
+            
+            <div class="tag_me">
+                <span><i class="fab fa-instagram"></i></span>
+                <h2>Did you make this recipe?</h2>
+                <p>Tag @naijacookies on Instagram</p>
+                <p>and Hashtag it #NaijaCookieRecipes</p>
+            </div>
+
+        </div>
+        
+    </section>
+  
+     
+    <footer class="footer">
+        <div class="footer_icons">
+            <ul class="social-buttons_icons">
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+          
+        </div>
+        <p class="footer_copy">Copyright © NaijaCookies Inc. 2020. All rights reserved.</p>
+    </footer>
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hde-mob');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hde-mob');
+            e.preventDefault();
+        });
+    </script>
+    </body>
+</html>

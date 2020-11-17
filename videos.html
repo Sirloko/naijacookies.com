@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>9jaCookies</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/videos.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/base.css">
+        <script src="js/base.js" async defer></script>
+        <script src="/js/all.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+
+    </head>
+    <body>
+          <!--====== HEADER PART START ======-->
+
+    <section id="home" class="main_section">
+        <header>
+            <div class="logo">
+                <img src="img/icon/a1.svg" alt="23and four" class="logo">
+            </div>
+    
+            <nav>
+                
+                <a href="#" class="hde-dsk">
+                    <img src="img/icon/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="shw-dsk hde-mob navbar" id="nav">
+                    <li id="exit" class="exit-btn hde-dsk"><img src="img/icon/exit.svg" alt="exit"></li>
+                    <li class="nav-item"><a class="page-scroll active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a href="recipes.html">Recipies</a></li>
+                    <li class="nav-item"><a href="details.html">Store</a></li>
+                    <li class="nav-item"><a href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a href="pictures.html"  target="_blank">Gallery</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main_content">
+            <h2 class="title">Some of our Videos</h2>
+            <!-- Videos Section -->
+            <div class="videos">
+                <div class="video">
+                    <a data-fancybox href="/0.mp4">
+                    <img src="img/video.webp" alt="">
+                    <span>How to Fry Beans using oil,sand and water</span></a>
+                </div>
+                <div class="video">
+                    <a data-fancybox href="/0.mp4">
+                    <img src="img/video.webp" alt="">
+                    <span>How to Fry Beans using oil,sand and water</span></a>
+                </div>
+                <div class="video">
+                    <a data-fancybox href="/0.mp4">
+                    <img src="img/video.webp" alt="">
+                    <span>How to Fry Beans using oil,sand and water</span></a>
+                </div>
+                
+            </div>
+            <!-- More Video Content Section -->
+            <div class="more_content">
+                <p>
+
+                    <a href="0.mp4" class="view_all" data-thumb="/img/p4.jpg" data-fancybox="cl-group">
+                        View All
+                    </a>
+                </p>
+
+                <div class="hidden">
+                    <a data-fancybox="cl-group" data-thumb="/img/cs.svg" href="0.mp4"></a>
+                    <a data-fancybox="cl-group" data-thumb=""  href="0.mp4"></a>
+                    <a data-fancybox="cl-group" data-thumb="" href="0.mp4"></a>
+                    <a data-fancybox="cl-group" data-thumb="" href="0.mp4"></a>
+                    <a data-fancybox="cl-group" data-thumb="" href="0.mp4"></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+  
+    <footer class="footer">
+        <div class="footer_icons">
+            <ul class="social-buttons_icons">
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+        
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer_copy">Copyright © NaijaCookies Inc. 2020. All rights reserved.</p>
+    </footer>
+
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hde-mob');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hde-mob');
+            e.preventDefault();
+        });
+    </script>
+    </body>
+</html>

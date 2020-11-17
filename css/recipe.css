@@ -1,0 +1,40 @@
+
+
+/* Main Content starts */
+.main_content{
+  margin: 4rem auto;
+}
+.recipies{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-auto-rows:minmax(100px, auto);
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  background-color: #ffffff;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.recipe{
+  padding: .7rem;
+}
+.recipe img{
+  border-radius: .2rem;
+}
+
+.recipe span{
+  position: relative;
+  top: .7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #370809;
+  width: 80%;
+}
+
+.recipe:hover{
+  box-shadow: 0 3px 6px #d6d6d6;
+  transition: .5s;
+  cursor: pointer;
+}
