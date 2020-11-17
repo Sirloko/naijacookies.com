@@ -1,3 +1,0 @@
-pink #ff91c3
-dark brown #370809
-light brown #98211f
