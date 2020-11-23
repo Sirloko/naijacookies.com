@@ -38,3 +38,37 @@
   transition: .5s;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1024px){
+  .recipies{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .recipies{
+    grid-auto-rows:minmax(50px, auto);
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+  }
+  .recipe img{
+    display: none;
+  }
+  .recipe{
+  background-color: #bcbcc2;
+  border-radius: .6rem;
+  }
+  .recipe:hover{
+    background-color: #cbcbd3;
+  }
+  .recipe span{
+    position: relative;
+    top: .1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .recipies{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

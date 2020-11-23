@@ -56,4 +56,24 @@
   box-shadow: 0 3px 6px #727171;
   color: #413e3e;
 }
-
+@media only screen and (max-width: 800px){
+  .gallery{
+    grid-template-columns:repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 500px){
+  .gallery{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  .gallery-image span{
+    display: none;
+  }
+}
+@media only screen and (max-width: 300px){
+  .gallery{
+    grid-template-columns:1fr;
+  }
+  .gallery-image span{
+    display: inline-block;
+  }
+}

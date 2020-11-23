@@ -4,6 +4,7 @@
 
 .main_content{
   margin: 4rem auto;
+  /* background-image: url(/img/shiny.svg); */
 }
 .videos{
   display: grid;
@@ -25,12 +26,20 @@
   
 }
 .video span{
-  position: relative;
-  top: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #370809;
-  width: 80%;
+}
+
+.video-info{
+  display: grid; 
+  grid-template-columns: 80% auto;
+  margin-top: 1rem;
+}
+
+.video .button{
+  width: 3.5rem;
+  justify-self: flex-end;
 }
 
 .video:hover{
@@ -54,4 +63,41 @@
 }
 .view_all:hover{
   box-shadow: 0 3px 6px #727171;
+}
+@media only screen and (max-width: 1024px){
+  .video span{
+    font-size: 1rem;
+  }
+  
+  .video-info{
+    grid-template-columns: 70% auto;
+  }
+  .video .button{
+    width: 3rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .videos{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .videos{
+    grid-template-columns: 1fr;
+  }
+  .video span{
+    font-size: 1.3rem;
+  }
+  .video .button{
+    width: 4em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .video span{
+    font-size: 1rem;
+  }
+  .video .button{
+    width: 2em;
+  }
 }
