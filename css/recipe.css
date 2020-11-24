@@ -50,16 +50,14 @@
     grid-row-gap: 1rem;
     grid-column-gap: 2rem;
   }
-  .recipe img{
-    display: none;
-  }
+  
   .recipe{
-  background-color: #bcbcc2;
+  background-color: #f4f4fa;
   border-radius: .6rem;
   }
-  .recipe:hover{
+  /* .recipe:hover{
     background-color: #cbcbd3;
-  }
+  } */
   .recipe span{
     position: relative;
     top: .1rem;
@@ -70,5 +68,10 @@
 @media only screen and (max-width: 500px) {
   .recipies{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .recipe span{
+    top: .3rem;
+    font-size: .6rem;
+    font-weight: 400;
   }
 }

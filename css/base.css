@@ -98,7 +98,8 @@ nav ul li a {
 	cursor: pointer;
 }
 .exit-btn img:hover {
-	transform: rotateX(50deg);
+	transform: scale(.8);
+	transition: .3s;
 }
 
 .title {
